@@ -1,0 +1,46 @@
+{
+  "name": "right-copy-code-line",
+  "displayName": "复制代码上下文",
+  "description": "复制带有工作区相对路径和行号的完整代码片段。",
+  "version": "0.1.0",
+  "publisher": "hitctc",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./dist/src/extension.js",
+  "activationEvents": [
+    "onCommand:rightCopyCodeLine.copyContext"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "rightCopyCodeLine.copyContext",
+        "title": "复制代码上下文",
+        "enablement": "editorHasSelection"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "rightCopyCodeLine.copyContext",
+          "group": "navigation",
+          "when": "editorTextFocus"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p tsconfig.json",
+    "test": "npm run compile && node --test dist/test/*.test.js",
+    "check": "npm test"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.4.0"
+  }
+}
