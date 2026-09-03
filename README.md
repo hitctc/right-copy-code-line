@@ -25,9 +25,26 @@
 - 保留原始代码内容和缩进
 - 使用独立的“复制代码上下文”菜单项，不影响 VS Code 原生“复制”功能
 
+## 获取 VSIX 安装包
+
+VSIX 是 VS Code 扩展的安装包。进入项目根目录后，执行以下命令：
+
+```bash
+npm install
+npx @vscode/vsce package
+```
+
+打包命令执行完成后，会在项目根目录生成：
+
+```text
+right-copy-code-line-0.1.0.vsix
+```
+
+其中，`npm install` 用于安装打包所需的项目依赖，`npx @vscode/vsce package` 用于将扩展清单、编译后的代码和必要文件打包成 VSIX。
+
 ## 安装方法
 
-如果使用 VSIX 安装包：
+生成 VSIX 安装包后：
 
 1. 打开 VS Code。
 2. 点击左侧“扩展”图标。
