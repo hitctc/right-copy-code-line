@@ -6,6 +6,7 @@
     "outDir": "dist",
     "rootDir": ".",
     "strict": true,
+    "types": ["node", "vscode"],
     "esModuleInterop": true,
     "skipLibCheck": true,
     "sourceMap": true

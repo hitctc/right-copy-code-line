@@ -12,9 +12,6 @@
     "Other"
   ],
   "main": "./dist/src/extension.js",
-  "activationEvents": [
-    "onCommand:rightCopyCodeLine.copyContext"
-  ],
   "contributes": {
     "commands": [
       {
