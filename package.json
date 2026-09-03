@@ -5,6 +5,10 @@
   "version": "0.1.0",
   "publisher": "hitctc",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hitctc/right-copy-code-line.git"
+  },
   "engines": {
     "vscode": "^1.85.0"
   },
