@@ -24,7 +24,7 @@
       "editor/context": [
         {
           "command": "rightCopyCodeLine.copyContext",
-          "group": "navigation",
+          "group": "9_cutcopypaste@10",
           "when": "editorTextFocus"
         }
       ]
